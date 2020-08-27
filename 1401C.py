@@ -17,10 +17,8 @@ def main():
             if i == j:
                 continue
 
-            # Two swap strategies:
-            # 1. Directly swap the numbers.
-            # 2. Swap the numbers using the min element
-            if GCD(j, i) != min_element and (GCD(i, min_element) != min_element or GCD(j, min_element) != min_element):
+            # Swap the numbers using the min element
+            if (GCD(i, min_element) != min_element or GCD(j, min_element) != min_element):
                 FLAG = False
                 break
 
